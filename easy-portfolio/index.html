@@ -18,7 +18,7 @@
                   <a onClick="clickProject();">Projetos</a> 
                </li>
                <li>
-                  <a href="contact.html">Contato</a>
+                <a onClick="clickContact();">Contato</a>
                </li>
             </ul>
          </nav>
@@ -54,6 +54,14 @@
                    </p>
                 </section>
              </div>
+             <div class="contact" id="contact">
+                <section>
+                   <h3>Contato</h3>
+                   <p>
+                    (11)99999-9999 
+                   </p>
+                </section>
+             </div>
          </main>
          <footer>
             <a href="https://github.com/" target="blank" rel="noopener noreferrer">
@@ -73,12 +81,19 @@
    </body>
    <script>
        function clickAbout(){
-        document.getElementById("project").style.display = "none";    
-        document.getElementById("aboutMe").style.display = "block";
+         document.getElementById("contact").style.display = "none";
+         document.getElementById("project").style.display = "none";    
+         document.getElementById("aboutMe").style.display = "block";
        }
        function clickProject(){
-            document.getElementById("aboutMe").style.display = "none";
-            document.getElementById("project").style.display = "block";
+         document.getElementById("contact").style.display = "none";
+         document.getElementById("aboutMe").style.display = "none";
+         document.getElementById("project").style.display = "block";
+       }
+       function clickContact(){
+         document.getElementById("project").style.display = "none";
+         document.getElementById("aboutMe").style.display = "none";
+         document.getElementById("contact").style.display = "block";
        }
    </script>
 </html>
