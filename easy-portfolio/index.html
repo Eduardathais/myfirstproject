@@ -65,15 +65,15 @@
          </main>
          <footer>
             <a href="https://github.com/" target="blank" rel="noopener noreferrer">
-               <img src="./img/github2.png"></img>
+               <img src="./img/github dark.png" class="img-github"></img>
                <p>Github</p>
             </a>
             <a href="https://www.linkedin.com/in/eduardatomasi/" target="blank" rel="noopener noreferrer">
-               <img src="./img/linkedin.png"></img>
+               <img src="./img/linkedin cinza.png"></img>
                <p>LinkedIn</p>
             </a>
             <a href="https://www.youtube.com/" target="blank" rel="noopener noreferrer">
-               <img src="./img/youtube.png"></img>
+               <img src="./img/yt dark.png" class="img-youtube"></img>
                <p>Youtube</p>
             </a>
          </footer>
@@ -81,19 +81,18 @@
    </body>
    <script>
        function clickAbout(){
-         document.getElementById("contact").style.display = "none";
-         document.getElementById("project").style.display = "none";    
-         document.getElementById("aboutMe").style.display = "block";
+         showAndHide("aboutMe", "project", "contact");
        }
        function clickProject(){
-         document.getElementById("contact").style.display = "none";
-         document.getElementById("aboutMe").style.display = "none";
-         document.getElementById("project").style.display = "block";
+         showAndHide("project", "aboutMe", "contact");
        }
        function clickContact(){
-         document.getElementById("project").style.display = "none";
-         document.getElementById("aboutMe").style.display = "none";
-         document.getElementById("contact").style.display = "block";
+         showAndHide("contact", "aboutMe", "project");
+       }
+       function showAndHide(enable, disable, disable1){
+         document.getElementById(enable).style.display = "block";
+         document.getElementById(disable).style.display = "none";
+         document.getElementById(disable1).style.display = "none";
        }
    </script>
 </html>

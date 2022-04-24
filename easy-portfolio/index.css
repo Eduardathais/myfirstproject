@@ -1,6 +1,6 @@
 body {
-    color:white;
-    background-color:black;
+    color:#106f67;
+    background-color:#f5f5f5;
     font-family: Arial, Helvetica, sans-serif;
 
 }
@@ -15,7 +15,7 @@ ul {
 }
 
 a {
-    color:white;
+    color:rgb(11, 88, 88);
     text-decoration: none;
 
 }
@@ -24,7 +24,7 @@ header img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 5px solid blue;
+    border: 5px solid #1a4b47;
 }
 
 .center {
@@ -32,13 +32,23 @@ header img {
 }
 
 h1 {
-    color: blue;
+    color: #1a4b47;
 }
 
 footer img {
     width: 40px;
     height: 40px;
 
+}
+
+.img-youtube{
+    width: 50px;
+    height: 40px;
+}
+
+.img-github{
+    width: 40px;
+    height: 40px;
 }
 
 footer {
@@ -48,7 +58,7 @@ footer {
 }
 
 footer a {
-    margin: 20px;
+    margin: 30px;
     text-align: center;
 }
 
@@ -61,7 +71,7 @@ footer p {
 }
 
 nav a:hover{
-    color:blue;
+    color:#1a4b47;
     
 }
 
